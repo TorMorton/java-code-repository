@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* this style applies to everything in every tag within main*/
+        body, main{
+            font-style: italic;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        }
+
+        body {
+            background-image: url("images/starrysky.avif");
+        }
+
+        /* background color has red, green, blue, and alpha channels
+        color -- 0 = none, 255 = full
+        alpha -- transpacency, 1 = opaque, 0 = transparent */
+        main {
+            padding: 32px;
+            background-color: rgba(255, 255, 255, .8);
+            height: 100vh;
+        }
+
+        /* this overrides the styling in the parent tag*/
+        article {
+            font-style: normal;
+        }
+
+        /* this overrides the styling in the parent tag, too 
+        can be a class or ID style; works the same way */
+        section {
+            font-style: italic;
+        }
+
+        .awesome-heading {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 40px;
+            background-color: blanchedalmond;
+            margin-left: 100px;
+            margin-right: 100px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border: 3px solid #0f65cb;
+
+
+        }
+
+        /* this syntax styles all the p's in a section
+            -- even if they are inside another child tag */
+        section > p {
+            color: red;
+        }
+
+        /* if i did this::after
+        section > p{}
+        it would apply ONLY to p tags that are DIRECT children of sections
+        */
+
+        .sun-image {
+            width: 250px;
+            float: right;
+            /*margin-left: 24px
+            margin-bottom: 12px;
+            the combo selector goes top, right, bottom, left */
+            margin: 0px 0px 12px 24px;
+        }
+
+        #planets-list {
+            float: right;
+            border: 3px solid #0f65cb;
+            background-color: blanchedalmond;
+            padding-right: 32px;
+            margin-left: 24px;
+            margin-bottom: 12px;
+
+        }
+
+        nav {
+           background-color: rgb(230, 114, 26);
+           text-align: center; 
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            font-style: normal;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0px 12px;
+            padding: 16px;
+            background-color: rgba(0, 0, 0, 0);
+            transition: background-color 0.3s;
+        }
+
+        /* this creates a style for when I hover my mouse over the link */
+        nav a:hover {
+            color: rgba(255, 255, 255, .9);
+            background-color: rgba(255, 255, 255, .2);
+        }
+
+        /* this keeps track of the pages the user has visited
+        and displays this style for those links ONLY */
+
+        /* nav a: visited {
+            color: black;
+        } */
+
+    </style>
+
+
+</head>
+<body>
+    <!-- this area is for the nav bar -->
+    <nav>
+        <a href-"">Edwin's Tasty Market</a>
+        <a href-"">About Us</a>
+        <a href-"">Our Products</a>
+
+    </nav>
+    <main>
+
+        <article>
+
+            <h1 class ="awesome-heading">The Solar System</h1>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, optio quasi beatae doloribus quas cumque repellendus a possimus blanditiis consequuntur, incidunt odio vel. Doloribus nisi eaque qui iure sit consequuntur!</p>
+            
+            <section>
+                <img class"sun-image" src="images/thesun.jpg" alt="The Sun, duh";
+                <h2>The Sun</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem distinctio odio corporis officiis eaque? Nam velit ea perspiciatis porro officia quae, laudantium debitis doloremque. Reprehenderit dolores id quasi laudantium necessitatibus.
+                Quo qui velit cum explicabo id reprehenderit ullam. Modi perspiciatis, deleniti quas in libero amet necessitatibus recusandae debitis dolores provident unde et, corporis tenetur officiis? Labore ratione libero quidem nihil.
+                Nam voluptate vero quia est ipsum eum, temporibus quae beatae, omnis laborum unde? Voluptatibus accusantium perferendis cupiditate omnis voluptas molestias quod? Fuga labore, necessitatibus qui odio eveniet error dolore neque.</p>
+            </section>
+
+            <section>
+                <h2>The Planets</h2>
+                <aside id="planets-list">
+                   <ul>
+                            <li>Mercury</li>
+                             <li>Earth</li>
+                            <li>Venus</li>
+                            <li>Mars</li>
+                            <li>Jupiter</li>
+                            <li>Saturn</li>
+                            <li>Uranus</li>
+                            <li>Neptune</li>
+
+                     </ul>
+                </aside>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam delectus iste, odio quidem, atque sequi eum deserunt soluta odit quia perspiciatis blanditiis assumenda sunt dolorem distinctio? Corrupti libero impedit error!
+                Voluptatibus fugit quidem molestias cum porro similique veniam molestiae quibusdam adipisci. Perspiciatis debitis asperiores corrupti itaque ducimus sit, dolorem labore suscipit molestias sint maiores, aut distinctio nemo fuga cum illo?</p>
+
+
+                <footer>
+                    <p></p>
+                </footer>
+            </section>
+
+
+        </article>
+
+
+    </main>
+
+</body>
+</html>
