@@ -1,0 +1,52 @@
+/* this is our stylesheet for our flex-box.html page */
+
+body {
+    background-color: rgb(237, 237, 237);
+
+}
+
+/* this is the style for our flexible box */
+.flex-box {
+    /* must use this to tell it it's a flex box */
+    display: flex;
+    flex-direction: row; /* column, row-reverse, column-reverse */
+    flex-wrap: wrap;
+
+    /* justify-content
+
+    baseline (default)
+    space-between (puts equal spacing in between items)
+    space-around (puts equal spacing between and around items)
+    center (centers everything)
+    */
+    justify-content: space-between;
+}
+
+.item {
+    width: 10em;
+    padding: 5em 0px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: rgb(31, 195, 31);
+
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.purple {
+    background-color: purple;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Nav</title>
+
+    <style>
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            background-color: lightgray;
+        }
+
+        nav a {
+            display: inline-block;
+            text-align: center;
+            padding: 20px;
+            background-color: lightgray;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            min-width: 200px;
+        }
+
+        nav a:hover {
+            background-color: gray; 
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+        }
+
+        section {
+            padding: 24px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <nav>
+        <a href="flex-box.html">First Link</a>
+        <a href="flex-box.html">Second Link</a>
+        <a href="flex-box.html">Third Link</a>
+
+    </nav>
+
+    <main>
+        <!-- flex box will try and maintain an "even" so it will adjust the column width to achieve this unless you specify content width in another style class/id/etc. -->
+        <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deleniti esse mollitia enim quam. At expedita maxime perferendis asperiores perspiciatis, rerum, sapiente obcaecati, quibusdam ratione voluptatem dolores! Quas, distinctio officiis!
+        Sit repudiandae, porro minus deleniti, incidunt natus fugit provident error molestias accusantium accusamus mollitia corporis ratione dicta suscipit sed. Assumenda neque ipsa molestias quos fugit. Corporis rerum expedita laboriosam similique!
+        </section>
+        <section>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad necessitatibus atque tempore tempora. Asperiores consequatur, corporis eius distinctio voluptates excepturi quos. Amet ipsa quod quae rerum placeat veritatis perspiciatis reiciendis?
+            Nisi aperiam iste omnis vel culpa adipisci nesciunt exercitationem assumenda cumque! Unde minus repellendus dolore molestias, aliquid repudiandae sapiente molestiae iste nulla enim culpa? Doloremque temporibus numquam voluptate minima a?
+        </section>
+    </main>
+
+</body>
+</html>
