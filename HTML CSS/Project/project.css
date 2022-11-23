@@ -122,7 +122,8 @@ table thead {
 
 
  table td {    
-    
+    text-align: center;
+    padding: 30px;
 }
 
 table img {
