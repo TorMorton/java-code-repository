@@ -17,7 +17,7 @@ setTimeout(() => {
 // this is SENT third but happens before the second's time out elapses
 console.log('Third action');
 
-let myIntervale = setInterval(() => {
+let myInterval = setInterval(() => {
     console.log('Fourth action')
     console.log(x);
 }, 1000);
